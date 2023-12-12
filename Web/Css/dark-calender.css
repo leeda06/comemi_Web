@@ -1,0 +1,213 @@
+body {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main.calender {
+    margin: 0 auto;
+    margin-top: calc(44px + 100px);
+    width: min(50%, calc(800px - 100px * 2));
+    max-width: 800px;
+}
+
+.weekday.container,
+.dates.container,
+.review.flex-container {
+    background-color: #39393b;
+    padding: 10px;
+}
+
+.title.flex-container {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    column-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.weekday.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #9bfc7b;
+    border-radius: 10px 10px 0 0;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.dates.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.date.item {
+    padding: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-row: auto;
+    grid-column: auto;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.title.flex-container i {
+    color: #9bfc7b;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.title.flex-container .year,
+.title.flex-container .month {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.weekday.item {
+    color: #1c1c1e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.date.item {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item-HOVER:hover {
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.review.flex-container {
+    background-color: #4d4d4f;
+    margin-top: 20px;
+}
+
+.review.flex-container p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 540px) {
+    main.calender {
+        margin-top: calc(44px + 40px);
+        width: calc(100% - 10px * 2);
+    }
+
+    .title.flex-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title.flex-container i {
+        margin: 10px 0;
+    }
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for the blur effect */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    z-index: 1000; /* Ensure the modal is above other content */
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    width: 30%;
+    height: 60%;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #1c1c1e;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(155, 252, 123, 0.605);
+    gap: 5px;
+}
+
+#modal_title{
+    color: #1c1c1e;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 32px 20px 20px 20px;
+    color: #fff;
+}
+.sub{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 7px;
+    background-color: #1c1c1e;
+}
+.sub-text{
+    color: #fff;
+    width: 80%;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+}
+.sub-line{
+    background-color: #fff;
+    height: 1px;
+    width: 82%;
+}
+.sub-title{
+    width: 30%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.sub-detail{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+.modal-line{
+    background-color: #fff;
+    height: 3px;
+    width: 85%;
+}
+
+#closeBtn{
+    filter: invert(1);
+    position: absolute;
+    top: 25px; 
+    right: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    font-size: 1em;
+}
