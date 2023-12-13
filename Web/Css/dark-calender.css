@@ -34,7 +34,7 @@ main.calender {
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
     font-size: 1.1rem;
-    background-color: #9bfc7b;
+    background-color: #5ad72e;
     border-radius: 10px 10px 0 0;
     font-weight: 800;
     padding: 10px;
@@ -47,6 +47,7 @@ main.calender {
     font-size: 1.1rem;
     border-radius: 0 0 10px 10px;
     padding: 10px;
+    gap: 8px;
 }
 
 .date.item {
@@ -62,7 +63,7 @@ main.calender {
 }
 
 .title.flex-container i {
-    color: #9bfc7b;
+    color: #5ad72e;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -84,6 +85,10 @@ main.calender {
     color: #ffffff;
     padding: 10px;
     border-radius: 5px;
+}
+
+.item-HOVER {
+    border: 1px solid rgb(79, 79, 79);
 }
 
 .item-HOVER:hover {
@@ -144,7 +149,7 @@ main.calender {
     text-align: center;
     background-color: #1c1c1e;
     color: #fff;
-    box-shadow: 0 0 10px rgba(155, 252, 123, 0.605);
+    box-shadow: 0 0 10px #5ad72e;
     gap: 5px;
 }
 
@@ -162,7 +167,6 @@ main.calender {
     justify-content:start;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
     gap: 7px;
     background-color: #1c1c1e;
 }
@@ -202,9 +206,24 @@ main.calender {
     width: 85%;
 }
 
+.item-toDay{
+    border: 2px solid #5ad72e;
+}
+
+.txt-blue{
+    color: #00b3ff;
+    border: 2px solid #5ad72e;
+}
+
+.txt-red{
+    color: #ff0000;
+    border: 2px solid #5ad72e;
+}
+
 #closeBtn{
     filter: invert(1);
     position: absolute;
+    color: #1c1c1e;
     top: 25px; 
     right: 25px;
     background-color: rgba(255, 255, 255, 0);

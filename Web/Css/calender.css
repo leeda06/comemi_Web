@@ -46,6 +46,7 @@ main.calender {
     font-size: 1.1rem;
     border-radius: 0 0 10px 10px;
     padding: 10px;
+    gap: 8px;
 }
 
 .date.item {
@@ -73,7 +74,7 @@ main.calender {
 }
 
 .weekday.item {
-    color: #1c1c1e;
+    color: #fff;
     padding: 10px;
     border-radius: 5px;
 }
@@ -82,6 +83,10 @@ main.calender {
     color: #1c1c1e;
     padding: 10px;
     border-radius: 5px;
+}
+
+.item-HOVER {
+    border: 1px solid #2d2d2d;
 }
 
 .item-HOVER:hover {
@@ -203,11 +208,24 @@ main.calender {
     width: 85%;
 }
 
+.item-toDay{
+    border: 2px solid #2e7816;
+}
+
+.txt-blue{
+    color: #00b3ff;
+}
+
+.txt-red{
+    color: #ff0000;
+}
+
 #closeBtn {
     filter: invert(0);
     position: absolute;
     top: 25px;
     right: 25px;
+    color: #1c1c1e;
     background-color: rgba(28, 28, 30, 0);
     border: 0px;
     font-size: 1em;

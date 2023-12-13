@@ -34,10 +34,9 @@ const setCalendar = (year1, month1) => {
         if (date > 0 && date <= lastDate) {
             dateItemDiv.classList.add("item-HOVER");
             dateItemDiv.innerHTML = date;
-            dateItemDiv.style.border = "1px solid #2d2d2d";
 
             if (date === todayD && month1 === monthD && year1 === year  ) {
-                dateItemDiv.style.border = "2px solid #2e7816";
+                dateItemDiv.classList.add("item-toDay");
             }
             
             dateItemDiv.addEventListener('click', () => {
