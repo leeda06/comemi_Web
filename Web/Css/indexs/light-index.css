@@ -31,6 +31,10 @@ body {
     color: #010101;
 }
 
-#third .content .detail > .txt_detail {
+#third .content .detail .div_detail > h3{
+    color: #1c1c1e;
+}
+
+#third .content .detail .div_detail> .txt_detail {
     color: #000;
 }

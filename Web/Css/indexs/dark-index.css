@@ -31,6 +31,10 @@ body {
     color: #fff;
 }
 
-#third .content .detail > .txt_detail {
+#third .content .detail .div_detail>h3 {
+    color: #fff;
+}
+
+#third .content .detail .div_detail> .txt_detail {
     color: rgba(255, 255, 255, 0.8); 
 }
