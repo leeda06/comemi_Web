@@ -1,0 +1,102 @@
+body {
+    background-color: #ffffff;
+    color: #1c1c1e;
+}
+
+.weekday.container,
+.dates.container,
+.review.flex-container {
+    background-color: #f5f5f5;
+}
+
+.weekday.container {
+    background-color: #2e7816;
+}
+
+.date.item {
+    color: #1c1c1e;
+    padding: 10px;
+}
+.title.flex-container i {
+    color: #2e7816;
+}
+
+.title.flex-container .year,
+.title.flex-container .month {
+    color: #1c1c1e;
+}
+
+.weekday.item {
+    color: #fff;
+}
+
+.date.item {
+    color: #1c1c1e;
+}
+
+.item-HOVER {
+    border: 1px solid #2d2d2d;
+}
+
+.item-HOVER:hover {
+    background-color: #e0e0e0;
+}
+
+.review.flex-container {
+    background-color: #f0f0f0;
+}
+
+.modal-container {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+    background-color: #ffffff; 
+    color: #1c1c1e;
+    box-shadow: 0 0 10px rgba(28, 28, 30, 0.605); 
+}
+
+#modal_title {
+    color: #1c1c1e;
+}
+
+.sub {
+    background-color: #ffffff;
+}
+
+.sub-text {
+    color: #1c1c1e;
+}
+
+.sub-line {
+    background-color: #1c1c1e;
+}
+
+.sub-title {
+    color: #1c1c1e;
+}
+
+.sub-detail {
+    color: #1c1c1e;
+}
+
+.modal-line {
+    background-color: #1c1c1e;
+}
+
+.item-toDay{
+    border: 2px solid #2e7816;
+}
+
+.txt-blue{
+    color: #00b3ff;
+}
+
+.txt-red{
+    color: #ff0000;
+}
+
+#closeBtn {
+    color: #1c1c1e;
+    background-color: rgba(28, 28, 30, 0);
+}

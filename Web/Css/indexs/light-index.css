@@ -1,0 +1,36 @@
+body {
+    background-color: #ffffff;
+    color: #1c1c1e;
+}
+
+.ornament {
+    color: #2e7816; /* Adjusted ornament color */
+}
+
+#first>h1 {
+    color: #000; /* Adjusted h1 color */
+}
+
+#first>p {
+    color: rgb(81, 81, 81);
+}
+
+#second {
+    background-color: #f5f5f5;
+}
+
+#second>p {
+    color: rgb(141, 141, 141);
+}
+
+#third {
+    background-color: #fff;
+}
+
+#third>h1 {
+    color: #010101;
+}
+
+#third .content .detail > .txt_detail {
+    color: #000;
+}

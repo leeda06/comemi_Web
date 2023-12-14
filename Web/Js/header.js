@@ -36,18 +36,21 @@ var nameLink = currentHtmlFileName + '.css';
 
 var link1 = document.createElement('link');
 link1.rel = 'stylesheet';
-link1.href = 'Css/' + currentHtmlFileName + 's/' + nameLink;
+link1.href = 'Css/' + currentHtmlFileName + 's/light-' + nameLink;
 var link2 = document.createElement('link');
 link2.rel = 'stylesheet';
 link2.href = 'Css/' + currentHtmlFileName + 's/dark-' + nameLink;
-
 
 function changeBright() {
     var iconElement = document.getElementById('icon');
     var links = document.getElementsByTagName('link');
 
     for (var i = 0; i < links.length; i++) {
-        if (links[i].href.indexOf(nameLink) !== -1) {
+        // Check if the link contains either 'light-' or 'dark-' followed by nameLink
+        if (
+            (links[i].href.indexOf('light-' + nameLink) !== -1 && iconElement.classList.contains('bi-brightness-alt-high-fill')) ||
+            (links[i].href.indexOf('dark-' + nameLink) !== -1 && iconElement.classList.contains('bi-brightness-alt-high'))
+        ) {
             document.head.removeChild(links[i]);
             break;
         }
@@ -63,3 +66,4 @@ function changeBright() {
         document.head.appendChild(link1);
     }
 }
+

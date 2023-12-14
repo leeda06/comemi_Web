@@ -1,6 +1,6 @@
 
 header {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 100%;
     height: 44px;
@@ -8,6 +8,8 @@ header {
     padding: 10px;
     text-align: center;
     justify-content: space-between;
+    top: 0;
+    z-index: 1000;
 }
 
 .mode>i{
