@@ -29,14 +29,26 @@ header {
     padding: 10px;
     text-align: center;
     justify-content: space-between;
+    flex-direction: row;
     top: 0;
     z-index: 1000;
 }
-
-.mode>i{
+.mode>i,
+.mode>a{
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 30px;
     color: aliceblue;
+}
+.mode> .bi-brightness-alt-high,
+.mode> .bi-brightness-alt-high-fill
+{
+    font-size: 30px;
+}
+.mode> .bi-calendar3 {
+    font-size: 24px;
+}
+.mode> .bi-person-circle {
+    font-size: 24px;
 }
