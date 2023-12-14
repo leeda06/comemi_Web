@@ -1,4 +1,16 @@
-/* reset CSS */
+/* WebKit 기반 브라우저에만 적용되는 스타일 */
+::-webkit-scrollbar {
+    width: 0px; /* 스크롤 바 폭 */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* 스크롤 바의 색을 투명하게 설정 */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* 스크롤 바 트랙의 색을 투명하게 설정 */
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +32,8 @@ img {
 }
 
 
-header {
+header,
+header > .mode {
     position: fixed;
     display: flex;
     width: 100%;
@@ -29,26 +42,55 @@ header {
     padding: 10px;
     text-align: center;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     top: 0;
     z-index: 1000;
 }
-.mode>i,
-.mode>a{
+
+.mode{
+    padding: 0 10%;
+}
+
+.mode > img{
+    display:flex;
+    width: auto;
+    height: 20px;
+    color: aliceblue;
+}
+
+.mode > .listI{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    gap: 20px;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.bi{
+    color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: aliceblue;
 }
 .mode> .bi-brightness-alt-high,
 .mode> .bi-brightness-alt-high-fill
 {
     font-size: 30px;
+    text-align: start;
 }
-.mode> .bi-calendar3 {
+.bi-calendar3 {
     font-size: 24px;
 }
-.mode> .bi-person-circle {
+.bi-person-circle {
     font-size: 24px;
+}
+
+#goIndex:hover{
+    cursor: pointer;
 }

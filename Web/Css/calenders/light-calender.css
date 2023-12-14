@@ -4,13 +4,14 @@ body {
 }
 
 .weekday.container,
-.dates.container,
-.review.flex-container {
+.dates.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     background-color: #f5f5f5;
 }
 
 .weekday.container {
     background-color: #2e7816;
+    box-shadow: 0 0 20px #5f9b4b;
 }
 
 .date.item {
